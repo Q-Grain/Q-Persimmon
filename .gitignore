@@ -1,2 +1,5 @@
 *.gz
 *.fna
+# 派生出的小体积序列文件要进版本库
+!data/targets/*.fna
+
