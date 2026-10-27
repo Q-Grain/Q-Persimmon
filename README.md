@@ -28,6 +28,7 @@
 
 | 路径 | 内容 | 是否进版本库 |
 |---|---|---|
+| `docs/plan/one-pager.md` | 项目一页纸 v0.2（目标定义、硬约束、路线、监管属性） | ✅ |
 | `docs/targets/target-genes.md` | 靶基因清单与说明（主文档） | ✅ |
 | `data/targets/starch_genes.tsv` | 100 个基因的明细表（编号/位置/长度/备注） | ✅ |
 | `data/targets/starch_genes.cds.fna` | 这 100 个基因的 DNA 序列 | ✅ |
