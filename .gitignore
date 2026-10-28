@@ -2,4 +2,6 @@
 *.fna
 # 派生出的小体积序列文件要进版本库
 !data/targets/*.fna
+# VS Code 任务等本地临时文件
+.vscode/
 
