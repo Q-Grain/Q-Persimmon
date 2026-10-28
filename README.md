@@ -28,6 +28,7 @@
 | 项目整体逻辑与边界 | `docs/plan/one-pager.md` |
 | 实验怎么做、买什么、怎么算成功 | `docs/plan/lab-plan.md` |
 | 具体要改哪些基因 | `docs/targets/target-genes.md` |
+| 要下单的 gRNA 候选 | `docs/targets/grna-design.md` |
 | 基因明细表（Excel 可开） | `data/targets/starch_genes.tsv` |
 | 原始数据（NCBI 下载） | `data/raw/` |
 
@@ -40,6 +41,7 @@
 | `docs/targets/target-genes.md` | 靶基因清单与说明（主文档） | ✅ |
 | `data/targets/starch_genes.tsv` | 100 个基因的明细表（编号/位置/长度/备注） | ✅ |
 | `data/targets/starch_genes.cds.fna` | 这 100 个基因的 DNA 序列 | ✅ |
+| `data/targets/grna_shortlist.tsv` | gRNA 短名单（15 条，含脱靶计数） | ✅ |
 | `data/raw/` | NCBI 原始下载（基因组 / GFF3 / 蛋白 / 转录本 / CDS，约 250 MB） | ❌ 被 `.gitignore` 排除 |
 | `scripts/extract_starch_genes.ps1` | 生成靶基因清单的脚本 | ✅ |
 | `scripts/verify_raw_files.ps1` | 校验 `data/raw/` 中文件完整性与记录数 | ✅ |
@@ -88,7 +90,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\extract_starch_genes
 | 1 | 定义目标与边界 | ✅ 已完成 | `docs/plan/one-pager.md` v0.3 |
 | 2 | 补齐基因组、注释、蛋白、转录本 | ✅ 已完成 | `data/raw/` 四件套 |
 | 3 | 建实验室，跑通组培与分子基本功 | ⬜ 待开始 | 见 `lab-plan.md` 阶段 0~2 |
-| 4 | gRNA 候选设计 + 全基因组脱靶分析 | ⬜ **可先做（纯计算）** | 候选序列表 |
+| 4 | gRNA 候选设计 + 全基因组脱靶分析 | ✅ 已完成（BAM1 待重做） | `docs/targets/grna-design.md` |
 | 5 | 体外 Cas9 切割验证 | ⬜ 待设备 | 切割成功的电泳图 |
 | 6 | 表达 + 体外酶活 | ⬜ 待设备 | 酶活数据 |
 | 7 | 整果表型验证 | ⬜ 待转化平台 | —— |
